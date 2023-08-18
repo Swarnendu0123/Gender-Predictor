@@ -12,7 +12,7 @@ fetch("https://get.geojs.io/v1/ip/geo.json")
     })
     .then(data => {
         console.log(data)
-        locat.innerText = "Location: " + data.city + ", " + data.region + ", " + data.country;
+        locat.innerText = "Access Point: " + data.city + ", " + data.region + ", " + data.country;
     })
 
 let showData = () => {
