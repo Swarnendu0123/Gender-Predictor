@@ -4,7 +4,7 @@ let btn = document.querySelector("button");
 let gender = document.querySelector(".gender")
 let probability = document.querySelector(".probability")
 let name = document.querySelector(".name")
-let loc = document.querySelector(".location")
+let locat = document.querySelector(".location")
 
 fetch("https://get.geojs.io/v1/ip/geo.json")
     .then(res => {
@@ -12,7 +12,7 @@ fetch("https://get.geojs.io/v1/ip/geo.json")
     })
     .then(data => {
         console.log(data)
-        loc.innerText = "Location: " + data.city + ", " + data.region + ", " + data.country;
+        locat.innerText = "Location: " + data.city + ", " + data.region + ", " + data.country;
     })
 
 let showData = () => {
