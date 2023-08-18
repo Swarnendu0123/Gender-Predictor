@@ -23,6 +23,7 @@ let showData = () => {
             console.log(error)
         })
     url = oldUrl
+    input.value = ""
 }
 
 
