@@ -18,7 +18,6 @@ fetch("https://get.geojs.io/v1/ip/geo.json")
 let showData = () => {
     let oldUrl = url
     url = url.concat(input.value)
-    console.log(url);
     fetch(url)
         .then((res) => {
             return res.json()
