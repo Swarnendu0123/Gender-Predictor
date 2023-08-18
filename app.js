@@ -5,6 +5,7 @@ let gender = document.querySelector(".gender")
 let probability = document.querySelector(".probability")
 let name = document.querySelector(".name")
 let locat = document.querySelector(".location")
+let ip = document.querySelector(".ip");
 
 fetch("https://get.geojs.io/v1/ip/geo.json")
     .then(res => {
@@ -13,6 +14,7 @@ fetch("https://get.geojs.io/v1/ip/geo.json")
     .then(data => {
         console.log(data)
         locat.innerText = "Access Point: " + data.city + ", " + data.region + ", " + data.country;
+        ip.innerText = "IP: " + data.ip
     })
 
 let showData = () => {
